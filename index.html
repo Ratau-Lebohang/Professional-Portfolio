@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - AI & Data Analytics Enthusiast</title>
+    <meta name="description" content="Personal portfolio of an AI & Data Analytics Enthusiast showcasing projects, skills, and experience">
+    <meta name="keywords" content="AI, Data Analytics, Portfolio, Machine Learning, Python, SQL">
+    <meta property="og:title" content="Portfolio - AI & Data Analytics Enthusiast">
+    <meta property="og:description" content="Personal portfolio showcasing AI and Data Analytics projects">
+    <meta name="twitter:title" content="Portfolio - AI & Data Analytics Enthusiast">
+    <meta name="twitter:description" content="Personal portfolio showcasing AI and Data Analytics projects">
+    
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/react@18/umd/react.production.min.js"></script>
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/@babel/standalone/babel.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://resource.trickle.so/vendor_lib/unpkg/lucide-static@0.516.0/font/lucide.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style type="text/tailwindcss">
+    @layer theme {
+        :root {
+            --primary-color: #0A1F44;
+            --accent-color: #1E90FF;
+            --secondary-color: #6A5ACD;
+            --bg-color: #0A0A0A;
+            --text-color: #FFFFFF;
+            --button-bg: #0A1F44;
+            --button-text: #FFFFFF;
+            --hover-color: #1E90FF;
+        }
+    }
+
+    @layer base {
+        * {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: var(--bg-color);
+            color: var(--text-color);
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Poppins', sans-serif;
+        }
+    }
+
+    @layer components {
+        .galaxy-gradient {
+            background: linear-gradient(135deg, #0A1F44 0%, #1E90FF 50%, #6A5ACD 100%);
+            background-size: 400% 400%;
+            animation: gradientShift 8s ease-in-out infinite;
+            position: relative;
+        }
+        
+        .galaxy-gradient::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at 20% 80%, #1E90FF 0%, transparent 50%),
+                        radial-gradient(circle at 80% 20%, #6A5ACD 0%, transparent 50%),
+                        radial-gradient(circle at 40% 40%, #0A1F44 0%, transparent 50%);
+            opacity: 0.7;
+            animation: float 6s ease-in-out infinite;
+        }
+        
+        .cosmic-gradient {
+            background: linear-gradient(45deg, #0A1F44, #1E90FF);
+        }
+        
+        .hero-button {
+            background: var(--primary-color);
+            color: var(--text-color);
+            border: 2px solid var(--accent-color);
+            transition: all 0.3s ease;
+            font-weight: 600;
+        }
+        
+        .hero-button:hover {
+            background: var(--accent-color);
+            color: var(--text-color);
+            transform: translateY(-2px) scale(1.05);
+            box-shadow: 0 10px 30px rgba(30, 144, 255, 0.4);
+            border-color: var(--accent-color);
+        }
+        
+        .primary-button {
+            background: var(--button-bg);
+            color: var(--button-text);
+            transition: all 0.3s ease;
+        }
+        
+        .primary-button:hover {
+            background: var(--hover-color);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(30, 144, 255, 0.3);
+        }
+        
+        .secondary-button {
+            border: 2px solid var(--accent-color);
+            color: var(--accent-color);
+            background: transparent;
+            transition: all 0.3s ease;
+        }
+        
+        .secondary-button:hover {
+            background: var(--accent-color);
+            color: var(--button-text);
+            transform: translateY(-2px);
+        }
+        
+        .nav-item {
+            position: relative;
+            padding: 0.5rem 1rem;
+            transition: all 0.3s ease;
+            border-radius: 0.5rem;
+        }
+        
+        .nav-item:hover {
+            color: var(--accent-color);
+            background: rgba(30, 144, 255, 0.1);
+        }
+        
+        .nav-item.active {
+            color: var(--accent-color);
+        }
+        
+        .nav-item.active::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 30px;
+            height: 2px;
+            background: var(--accent-color);
+        }
+        
+        .logo-circle {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: linear-gradient(45deg, var(--accent-color), var(--secondary-color));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            color: white;
+            font-size: 16px;
+        }
+        
+        .social-link {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            background: rgba(30, 144, 255, 0.1);
+        }
+        
+        .social-link:hover {
+            background: var(--accent-color);
+            transform: translateY(-2px);
+        }
+        
+        .project-card {
+            background: rgba(10, 31, 68, 0.4);
+            border: 1px solid rgba(30, 144, 255, 0.3);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+            transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+        }
+        
+        .project-card:hover {
+            transform: translateY(-8px) scale(1.02);
+            border-color: #1E90FF;
+            background: rgba(30, 144, 255, 0.1);
+            box-shadow: 0 15px 40px rgba(30, 144, 255, 0.4),
+                        inset 0 1px 0 rgba(255, 255, 255, 0.1);
+        }
+        
+        .skill-bar {
+            background: rgba(26, 32, 56, 0.5);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        
+        .skill-progress {
+            height: 8px;
+            background: linear-gradient(90deg, var(--accent-color), var(--secondary-color));
+            border-radius: 10px;
+            transition: width 2s ease-in-out;
+        }
+        
+        .contact-form {
+            background: rgba(26, 32, 56, 0.6);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(30, 144, 255, 0.2);
+        }
+    }
+
+    @layer utilities {
+        .text-shadow {
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease;
+        }
+        
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+    }
+    
+    @keyframes gradientShift {
+        0% { background-position: 0% 50%; }
+        25% { background-position: 100% 50%; }
+        50% { background-position: 100% 100%; }
+        75% { background-position: 0% 100%; }
+        100% { background-position: 0% 50%; }
+    }
+    
+    @keyframes float {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-10px); }
+    }
+    
+    .floating {
+        animation: float 3s ease-in-out infinite;
+    }
+    
+    @keyframes fireflyGlow {
+        0%, 100% { 
+            opacity: 0.3;
+            transform: scale(1);
+        }
+        50% { 
+            opacity: 1;
+            transform: scale(1.2);
+        }
+    }
+    
+    .firefly {
+        position: fixed;
+        width: 4px;
+        height: 4px;
+        border-radius: 50%;
+        z-index: 5;
+        pointer-events: none;
+        animation: fireflyGlow 2s ease-in-out infinite;
+        box-shadow: 0 0 6px currentColor, 0 0 12px currentColor, 0 0 18px currentColor;
+    }
+    
+    .firefly-gold {
+        background-color: #FFD700;
+        color: #FFD700;
+        animation-duration: 2.3s;
+    }
+    
+    .firefly-cyan {
+        background-color: #00FFFF;
+        color: #00FFFF;
+        animation-duration: 1.8s;
+        animation-delay: -0.5s;
+    }
+    
+    .firefly-pink {
+        background-color: #FF69B4;
+        color: #FF69B4;
+        animation-duration: 2.7s;
+        animation-delay: -1.2s;
+    }
+    
+    .firefly-green {
+        background-color: #00FF7F;
+        color: #00FF7F;
+        animation-duration: 2.1s;
+        animation-delay: -0.8s;
+    }
+    
+    .firefly-purple {
+        background-color: #9370DB;
+        color: #9370DB;
+        animation-duration: 2.5s;
+        animation-delay: -1.5s;
+    }
+    
+    .firefly-orange {
+        background-color: #FFA500;
+        color: #FFA500;
+        animation-duration: 1.9s;
+        animation-delay: -0.3s;
+    }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+    
+    <script type="text/babel" src="components/FireflyEffects.js"></script>
+    <script type="text/babel" src="components/Navigation.js"></script>
+    <script type="text/babel" src="components/HeroSection.js"></script>
+    <script type="text/babel" src="components/AboutSection.js"></script>
+    <script type="text/babel" src="components/ProjectsSection.js"></script>
+    <script type="text/babel" src="components/SkillsSection.js"></script>
+    <script type="text/babel" src="components/ResumeSection.js"></script>
+    <script type="text/babel" src="components/ContactSection.js"></script>
+    <script type="text/babel" src="utils/scrollAnimations.js"></script>
+    <script type="text/babel" src="app.js"></script>
+</body>
+</html>
