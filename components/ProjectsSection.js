@@ -31,11 +31,11 @@ function ProjectsSection() {
         demoLink: "https://github.com/Ratau-Lebohang/AI-Chatbot"
       },
       {
-        title: "Employee Attrition Analysis",
-        description: "This project explores employee attrition patterns using an HR dataset sourced from Kaggle. The analysis uncovers key factors driving employee turnover.",
-        techStack: ["Excel", "Python (Jupyter Notebook)", "Power BI"],
-        focusArea: ["Understanding turnover patterns", "Identifying attrition drivers", "Providing actionable HR recommendations"],
-        demoLink: "https://github.com/Ratau-Lebohang/Lebohang-Analytics-Portfolio/tree/23ad9c3e72f4339fc0798bae0679a7e18508a497/Employee%20Attrition"
+        title: "Alert Rider",
+        description: "Alert Rider is a web application that allows users to report hazards, study road signs, and learn safe road practices. It integrates AI (OpenAI API) to rewrite hazard descriptions clearly and professionally, and can translate hazard reports into South African languages.",
+        techStack: ["Backend: Node.js, Express.js", "Frontend: HTML, CSS, JavaScript, Leaflet.js", "Deployment: Render / Vercel"],
+        focusArea: ["Hazard Reports", "Road Sign Study Tool", " GPS + Map Detection"],
+        demoLink: "https://github.com/Capaciti-Tech-Team/Alert_Rider_App"
       },
       {
         title: "Customer Churn Analysis",
