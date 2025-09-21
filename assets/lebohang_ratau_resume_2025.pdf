@@ -1,0 +1,219 @@
+%PDF-1.4
+1 0 obj
+<<
+/Type /Catalog
+/Pages 2 0 R
+>>
+endobj
+
+2 0 obj
+<<
+/Type /Pages
+/Kids [3 0 R]
+/Count 1
+>>
+endobj
+
+3 0 obj
+<<
+/Type /Page
+/Parent 2 0 R
+/MediaBox [0 0 612 792]
+/Contents 4 0 R
+/Resources <<
+/Font <<
+/F1 5 0 R
+/F2 6 0 R
+/F3 7 0 R
+>>
+/ProcSet [/PDF /Text]
+>>
+/Annots [8 0 R 9 0 R]
+>>
+endobj
+
+4 0 obj
+<<
+/Length 4800
+>>
+stream
+BT
+/F1 24 Tf
+0 0 0 rg
+50 750 Td
+(Ratau Lebohang) Tj
+0 -25 Td
+/F2 11 Tf
+(Klippoortjie, Johannesburg | 071 165 8377 | rataulebohang8@gmail.com | ) Tj
+/F2 11 Tf
+0 0 1 rg
+(LinkedIn) Tj
+0 0 0 rg
+( | ) Tj
+0 0 1 rg
+(GitHub) Tj
+0 -35 Td
+/F1 16 Tf
+0 0 0 rg
+(PROFESSIONAL SUMMARY) Tj
+0 -5 Td
+0 0 0 rg
+20 0 l 200 0 l S
+0 -20 Td
+/F2 11 Tf
+(Highly analytical Data Analyst with a solid foundation in AI and machine learning principles. Skilled in SQL,) Tj
+0 -13 Td
+(Python, Excel, Tableau, and Power BI, with a passion for transforming complex data into actionable insights,) Tj
+0 -13 Td
+(with practical experience applying machine learning to turn data into actionable insights.) Tj
+0 -30 Td
+/F1 16 Tf
+(SKILLS) Tj
+0 -5 Td
+0 0 0 rg
+20 0 l 60 0 l S
+0 -20 Td
+/F2 11 Tf
+(• Programming Languages: Python, SQL, HTML/CSS, JavaScript) Tj
+0 -13 Td
+(• Tools & Platforms: Excel, Jupyter Notebook, VS Code, Git/GitHub) Tj
+0 -13 Td
+(• Data Visualization: Tableau, Power BI, Matplotlib, Plotly) Tj
+0 -13 Td
+(• Other: Documentation, Project Planning) Tj
+0 -13 Td
+(• Soft Skills: Problem-Solving, Communication, Critical Thinking, Time Management, Collaboration) Tj
+0 -30 Td
+/F1 16 Tf
+(EXPERIENCE) Tj
+0 -5 Td
+0 0 0 rg
+20 0 l 100 0 l S
+0 -20 Td
+/F3 13 Tf
+(Digital Associate: Data Analyst) Tj
+420 0 Td
+/F2 11 Tf
+(July 2025 - Present) Tj
+-420 -15 Td
+/F2 11 Tf
+(CAPACITI, Johannesburg) Tj
+0 -15 Td
+(• Completed bootcamp and hands-on training in AI fundamentals and data analytics) Tj
+0 -13 Td
+(• Collaborated on team projects, enhancing communication, accountability, and project delivery skills) Tj
+0 -35 Td
+/F1 16 Tf
+(EDUCATION) Tj
+0 -5 Td
+0 0 0 rg
+20 0 l 100 0 l S
+0 -20 Td
+/F3 13 Tf
+(Diploma in Information Technology Management) Tj
+400 0 Td
+/F2 11 Tf
+(2024) Tj
+-400 -15 Td
+/F2 11 Tf
+(IIE Rosebank College • Johannesburg) Tj
+0 -20 Td
+/F3 13 Tf
+(National Senior Certificate) Tj
+400 0 Td
+/F2 11 Tf
+(2020) Tj
+-400 -15 Td
+/F2 11 Tf
+(Katlehong High School) Tj
+0 -35 Td
+/F1 16 Tf
+(CERTIFICATIONS) Tj
+0 -5 Td
+0 0 0 rg
+20 0 l 130 0 l S
+0 -20 Td
+/F2 11 Tf
+(• Google Data Analytics Certificate) Tj
+0 -15 Td
+(• Google Business Intelligence Certificate) Tj
+0 -15 Td
+(• Artificial Intelligence Bootcamp Badge) Tj
+0 -15 Td
+(• Professional Development Badge) Tj
+ET
+endstream
+endobj
+
+5 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/BaseFont /Helvetica-Bold
+>>
+endobj
+
+6 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/BaseFont /Helvetica
+>>
+endobj
+
+7 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/BaseFont /Helvetica-Bold
+>>
+endobj
+
+8 0 obj
+<<
+/Type /Annot
+/Subtype /Link
+/Rect [387 692 427 705]
+/Border [0 0 0]
+/A <<
+/Type /Action
+/S /URI
+/URI (https://linkedin.com/in/lebohang-r-16067124b)
+>>
+>>
+endobj
+
+9 0 obj
+<<
+/Type /Annot
+/Subtype /Link
+/Rect [437 692 470 705]
+/Border [0 0 0]
+/A <<
+/Type /Action
+/S /URI
+/URI (https://github.com/Ratau-Lebohang)
+>>
+>>
+endobj
+
+xref
+0 10
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000295 00000 n 
+0000005147 00000 n 
+0000005220 00000 n 
+0000005288 00000 n 
+0000005361 00000 n 
+0000005510 00000 n 
+trailer
+<<
+/Size 10
+/Root 1 0 R
+>>
+startxref
+5648
+%%EOF
