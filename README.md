@@ -9,6 +9,7 @@ A modern, responsive portfolio website showcasing my work in Artificial Intellig
 - **About** – Bio, career objectives, and professional journey
 - **Projects** – Featured data & AI projects with stack and challenges
 - **Skills** – Interactive progress bars & visual skill breakdown
+- **Certifications** – comprehensive collection of professional certifications and achievements.
 - **Resume** – Downloadable interactive CV (Data Analyst focus)
 - **Contact** – Contact form + social links
 
